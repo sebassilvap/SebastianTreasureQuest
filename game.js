@@ -28,6 +28,16 @@ var level = 0;
 // -------------------------------------- JQUERY EXPRESSIONS FOR THE SYSTEM --------------------------------------
 // *************************************************************************************************************************
 
+// jQuery for clicking the anchor tag "here"
+// -----------------------------------------
+$('a').click(function () {
+  if (started === false) {
+    showCurrentLevel();
+    nextSequence();
+    started = true;
+  }
+});
+
 // jQuery for keypressing - the 1st time call nextSequence()
 // ---------------------------------------------------------
 $(document).keypress(function() {
@@ -66,7 +76,7 @@ $(".btn").click(function() {
     showAlert();
     setTimeout(function() {
       $("body").removeClass("game-over");
-    }, 300);
+    }, 800);
   }
 }); // END JQUERY
 
@@ -145,7 +155,7 @@ function checkAnswer(currentLevel) {
     // display the class "game-over" on the screen for 200 ms.
     setTimeout(function() {
       $("body").removeClass("game-over");
-    }, 300);
+    }, 800);
 
     // restart the game!
     startOver();
@@ -177,12 +187,26 @@ function showCurrentLevel() {
 // Function --> showGameOver, it shows a game over screen
 // ------------------------------------------------------
 function showGameOver() {
-  $("#level-title").text("GAME OVER, PRESS ANY KEY TO RESTART! 😥");
+  $("#level-title").html("GAME OVER, PRESS ANY KEY TO RESTART! 😥 OR CLICK <a href='#'>HERE</a>");
+  $('a').click(function () {
+    if (started === false) {
+      showCurrentLevel();
+      nextSequence();
+      started = true;
+    }
+  });
 }
 
 
 // Function --> showAlert, it shows an alert when I try to start playing without pressing a key
 // --------------------------------------------------------------------------------------------
 function showAlert () {
-  $("#level-title").text("PLEASE PRESS FIRST ANY KEY TO START PLAYING! 🐣😛");
+  $("#level-title").html("PLEASE PRESS FIRST ANY KEY TO START 🐣😛 OR CLICK <a href='#'>HERE</a>");
+  $('a').click(function () {
+    if (started === false) {
+      showCurrentLevel();
+      nextSequence();
+      started = true;
+    }
+  });
 }
