@@ -1,0 +1,87 @@
+body {
+  text-align: center;
+  /*background-color: #011F3F;*/
+  background-image: url("images/arcade.jpg");
+  height: 1500px;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+h2 {
+  font-family: 'Mystery Quest', cursive;
+  font-size: 5rem;
+  color: #ffff80;
+  margin: 2px;
+  text-shadow: 3px 0 #333232;
+}
+
+h3 {
+  font-family: 'Mystery Quest', cursive;
+  font-size: 3rem;
+  color: #ff6ea3;
+  margin: 2px;
+  text-shadow: 3px 0 #333232;
+
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  7% 4% 3%;
+  color: #e0e0e0;
+  text-shadow: 5px 0 black;
+}
+
+.header {
+  margin: 80px 50px 50px;
+  padding: 0;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid #e0e0e0;
+  border-radius: 20%;
+}
+
+.game-over {
+  /*background-color: red;*/
+  background-image: url("images/game-over.jpg");
+  height: 1200px;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+/* ----- Color Styles for the Buttons -----*/
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
