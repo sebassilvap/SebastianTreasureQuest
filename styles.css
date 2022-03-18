@@ -8,39 +8,46 @@ body {
   background-size: cover;
 }
 
-h2 {
+
+h1 {
   font-family: 'Mystery Quest', cursive;
-  font-size: 5rem;
+  font-size: 4rem;
   color: #ffff80;
-  margin: 2px;
-  text-shadow: 3px 0 #333232;
+  margin: 2% 2% 1%;
+  text-shadow: 3px 0 black;
 }
 
-h3 {
+h2 {
   font-family: 'Mystery Quest', cursive;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #ff6ea3;
-  margin: 2px;
-  text-shadow: 3px 0 #333232;
+  margin: 2% 2% 1%;
+  text-shadow: 3px 0 black;
 
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  7% 4% 3%;
-  color: #e0e0e0;
+  font-size: 1.8rem;
+  margin:  2% 2% 1%;
+  color: #ffffff;
   text-shadow: 5px 0 black;
+  line-height: 1.5;
+}
+
+a {
+  color: #efff12;
+  text-shadow: 3px 0 black;
 }
 
 .header {
-  margin: 80px 50px 50px;
+  margin: 50px 5px 5px;
   padding: 0;
 }
 
 .container {
   display: block;
-  width: 50%;
+  width: 90%;
   margin: auto;
 
 }
